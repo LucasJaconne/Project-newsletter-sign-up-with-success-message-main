@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -18,51 +18,78 @@
   <main>
 
 
-    <section>
+    <section id="sec1">
 
-      <picture
-      id="img1">
-        <img src="assets/images/illustration-sign-up-desktop.svg" alt="Ilustration_desk" >
+      <picture id="img1">
+        <source media="(max-width:  400px)" srcset="assets/images/illustration-sign-up-mobile.svg">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="Ilustration_desk" id="img2">
       </picture>
 
-      <div>
-        <H1>Stay updated!</H1>
-      </div>
-      <div>
-        <P>Join 60,000+ product managers receiving monthly updates on:</P>
-      </div>
-      <div>
-        <p>Product discovery and building what matters</p>
-        <p>Measuring to ensure updates are a success</p>
-        <p>And much more!</p>
-      </div>
-      <div>
-        <p>Email address</p>
-      </div>
-      <div>
-        <input type="text"></input>
-      </div>
-      <div id="b1">
-        <input type="button" value="Subscribe to monthly newsletter"Subscribe to monthly newsletter>
-      </div>
-    
+      <div id="container1">
+        <div id="title1">
+          <H1>Stay updated!</H1>
+        </div>
+        <div id="p1">
+          <P>Join 60,000+ product managers receiving monthly updates on:</P>
+        </div>
+
+        
+          <div id="text_icon">
+            <div id="text_icon_p">
+              <img src="assets/images/icon-list.svg" alt="" id="icon_image"><span>Product discovery and building what matters</span> <br>
+            </div>
+            <div id="text_icon_p">
+              <img src="assets/images/icon-list.svg" alt="" id="icon_image"><span>Measuring to ensure updates are a success</span> <br>
+            </div>
+            <div id="text_icon_p">
+              <img src="assets/images/icon-list.svg" alt="" id="icon_image"><span>And much more!</span>
+            </div>
+          </div>
+        
+
+        <div id="text_email_1">
+          <div id="email">
+            <p>Email address</p>
+          </div>
+          <div id="email1">
+            <p></p>
+          </div>
+        </div>
+        
+          <div>
+            <input type="email" placeholder="email@company.com" id="email_text" maxlength="60" size="65"></input>
+            <button id="but1" onclick="validarinput()">Subscribe to monthly newsletter</button>
+          </div>
+        
+      
     </section>
-  </main>
+
+    <section id="sec2">
+
+      <div id="img_sec2">
+        <img src="assets/images/icon-success.svg" alt="icon-success">
+      </div>
+
+      <div id="text_sec2">
+        <h1>Thanks for subscribing!</h1>
+      </div>
+
+      <div id="text2_sec2">
+        <p>
+          A confirmation email has been sent to ash@loremcompany.com.
+          Please open it and click the button inside to confirm your subscription.
+        </p>
+      </div>
+
+      <div id="but_sec2">
+        <input type="button" value="Dismiss message"> </input>
+      </div>
+      
+        </main>
+    </section>
 
   <script src="java.js"></script>
 
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
   
  
 </body>
